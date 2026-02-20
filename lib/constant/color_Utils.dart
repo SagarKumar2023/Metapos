@@ -3,7 +3,6 @@ class ColorUtils{
   static const Color colorWhite = Color(0xFFFFFFFF);
   static const Color backgroundColor = Color(0xFFEEEEEE);
   static Color lightTextColors =   const Color(0xFF1E1E1E);
-
   static Color lightSecondaryColor =   const Color(0xFF3DDC84);
   static const Color colorBlack = Color(0xff000000);
   static Color primaryColor = const Color(0xffaee364);

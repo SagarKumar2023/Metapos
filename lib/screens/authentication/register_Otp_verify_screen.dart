@@ -2,6 +2,7 @@ import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:metapos_sync_order_online_ofline/constant/PrefUtils/PrefUtils.dart';
 import 'package:metapos_sync_order_online_ofline/constant/color_Utils.dart';
 import 'package:metapos_sync_order_online_ofline/constant/screen_Size.dart';
 import 'package:metapos_sync_order_online_ofline/constant/snackBarUtils.dart';
@@ -95,7 +96,7 @@ class _OtpScreenState extends State<RegisterOtpVerifyScreen> {
                                animate: true,
                                duration: Duration(milliseconds: 1010),
                                child: MyText(
-                                 text: "Sent On Your Mobile +91 ",
+                                 text: "Sent On Your Mobile +91 ${PrefUtils.getUserPhone()} ",
                                  textColor: ColorUtils.black,
                                  fontWeight: FontWeight.w400,
                                  fontSize: 16,

@@ -225,7 +225,6 @@ class CatOtherData extends HiveObject {
       foodList: (json["food_list"] as List? ?? [])
           .map((e) => CatOtherDataFoodList.fromJson(e))
           .toList(),
-            // .map((e) => CatOtherDataFoodList.[ya pe indicatekar raha hai ]fromJson(e))
       bgColor: json["bg_color"]?.toString() ?? "",
     );
   }
@@ -812,8 +811,8 @@ class CatOtherDataFoodListWithDetails extends HiveObject {
     bgColor = json['bg_color'];
     foodBundlePrices = List.castFrom<dynamic, dynamic>(json['food_bundle_prices']);
     isCouponNotApplied = json['is_coupon_not_applied'];
-    familyGroupId = json['family_group_id'];
-    showEntryMain = json['show_entry_main'];
+    familyGroupId = json['family_group_id']??0;
+    showEntryMain = json['show_entry_main']??0;
     gstApplicable = json['gst_applicable']?.toString();
   }
 
@@ -2106,7 +2105,7 @@ class CatSpecialDealDataFoodList extends HiveObject {
     containsData = json['contains_data'] != null
         ? List<String>.from(json['contains_data'])
         : [];
-    foodAddons = json['food_addons'];
+    foodAddons = json['food_addons']??"";
     specialDealVariantName = json['special_deal_variats_name'];
     specialDealVariantId = json['special_deal_variats_id'];
 

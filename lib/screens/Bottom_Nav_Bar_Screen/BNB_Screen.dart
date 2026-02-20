@@ -1,3 +1,4 @@
+import 'package:google_fonts/google_fonts.dart';
 import 'package:metapos_sync_order_online_ofline/screens/Bottom_Nav_Bar_Screen/cart_screen/cart_screen.dart';
 import 'package:metapos_sync_order_online_ofline/screens/Bottom_Nav_Bar_Screen/cart_screen/cart_screen_arrowBack_button_source.dart';
 import 'package:metapos_sync_order_online_ofline/screens/Bottom_Nav_Bar_Screen/cart_screen/order_summary_screens/my_order_screens/my_order_screen.dart';
@@ -29,6 +30,7 @@ class _BNBScreenState extends State<BNBScreen> {
         title: "Home",
         activeColorPrimary: Colors.blue,
         inactiveColorPrimary: ColorUtils.black,
+
       ),
       // PersistentBottomNavBarItem(
       //   icon: const Icon(Icons.favorite_border),
@@ -82,5 +84,3 @@ class _BNBScreenState extends State<BNBScreen> {
     );
   }
 }
-
-
