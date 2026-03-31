@@ -20,7 +20,6 @@ class RegisterOtpVerifyScreen extends StatefulWidget {
   final String otp;
   const RegisterOtpVerifyScreen({
     super.key, required this.email, required this.otp,
-
   });
 
   @override
